@@ -76,8 +76,8 @@ func genericIsPathExists(pth string) (os.FileInfo, bool, error) {
 	return fileInf, false, err
 }
 
-// IsPathExists ...
-func IsPathExists(pth string) (bool, error) {
+// IsPathExist ...
+func IsPathExist(pth string) (bool, error) {
 	_, isExists, err := genericIsPathExists(pth)
 	return isExists, err
 }

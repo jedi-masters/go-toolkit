@@ -101,15 +101,15 @@ func TestIsRelativePath(t *testing.T) {
 func TestIsPathExists(t *testing.T) {
 	// should return false if path doesn't exist
 
-	exists, err := IsPathExists("this/should/not/exist")
+	exists, err := IsPathExist("this/should/not/exist")
 	require.Equal(t, nil, err)
 	require.Equal(t, false, exists)
 
-	exists, err = IsPathExists(".")
+	exists, err = IsPathExist(".")
 	require.Equal(t, nil, err)
 	require.Equal(t, true, exists)
 
-	exists, err = IsPathExists("")
+	exists, err = IsPathExist("")
 	require.NotEqual(t, nil, err)
 	require.Equal(t, false, exists)
 }
