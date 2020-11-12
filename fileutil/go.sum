@@ -1,8 +1,8 @@
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/godrei/go-toolkit v0.0.0-20201112211014-af32ae108a3d h1:kZ+atJxLBLbRymFChfjjxdDiJQsa9rM90RMhtHOKZp8=
-github.com/godrei/go-toolkit/pathutil v0.0.0-20201112211014-af32ae108a3d h1:R0By7YjW1t0HJ8M6KIMFYW788Caaa9tb1lZv57aHhfc=
-github.com/godrei/go-toolkit/pathutil v0.0.0-20201112211014-af32ae108a3d/go.mod h1:/aW2A47bJE1VvptqQok7rmSZa6J+vvkXhRHxYjvCgY4=
+github.com/godrei/go-toolkit v0.0.0-20201112211833-17bcdbbd9952 h1:AYxGczWK3UzKjNTzgWElLjpB89nstJekk6B1EPzK6SU=
+github.com/godrei/go-toolkit/pathutil v0.0.1 h1:9D8mGMD9QL6IUUJ9fp2x0HV+5iEnQJsjDYiUb2Ydc5M=
+github.com/godrei/go-toolkit/pathutil v0.0.1/go.mod h1:/aW2A47bJE1VvptqQok7rmSZa6J+vvkXhRHxYjvCgY4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
