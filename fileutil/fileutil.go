@@ -119,8 +119,8 @@ func ReadBytesFromFile(pth string) ([]byte, error) {
 	return bytes, nil
 }
 
-// ReadStringFromFile ...
-func ReadStringFromFile(pth string) (string, error) {
+// ReadFromFile ...
+func ReadFromFile(pth string) (string, error) {
 	contBytes, err := ReadBytesFromFile(pth)
 	if err != nil {
 		return "", err
