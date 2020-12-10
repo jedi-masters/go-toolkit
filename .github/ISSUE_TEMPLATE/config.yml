@@ -1,4 +1,5 @@
 blank_issues_enabled: false
+contact_links:
   - name: 🚀 Feature Request
     url: https://github.com/jedi-masters/go-toolkit/discussions/new
     about: Share ideas for new features
