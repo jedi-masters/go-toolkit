@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 🚀 Feature Request
-    url: https://github.com/jedi-masters/go-toolkit/discussions/new?category%3AIdeas
+    url: https://github.com/jedi-masters/go-toolkit/discussions/new?category_id=13617532
     about: Share ideas for new features
   - name: ❓ Ask a Question
     url: https://github.com/jedi-masters/go-toolkit/discussions/new
