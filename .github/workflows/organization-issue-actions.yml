@@ -2,7 +2,7 @@ name: Organization Issue Actions
 
 on:
   schedule:
-    # run at 12:00 (UTC+1) every day
+    # run at 11:30 (UTC) every day
     - cron: '30 11 * * *'
 
 jobs:
