@@ -3,7 +3,7 @@ name: Organization Issue Actions
 on:
   schedule:
     # run at 12:00 (UTC+1) every day
-    - cron: '0 11 * * *'
+    - cron: '30 11 * * *'
 
 jobs:
   stale:
