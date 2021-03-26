@@ -32,9 +32,6 @@ jobs:
             I'll close this issue, but if you need more info/help just let us know by opening a new one!
           stale-issue-label: stale
           close-issue-label: stale
-  lock:
-    runs-on: ubuntu-latest
-    steps:
       - uses: dessant/lock-threads@v2
         with:
           github-token: ${{ github.token }}
