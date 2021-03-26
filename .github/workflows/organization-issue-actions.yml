@@ -1,0 +1,47 @@
+name: Organization Issue Actions
+
+on:
+  schedule:
+    # run at 12:00 (UTC+1) every day
+    - cron: '0 11 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v3
+        with:
+          repo-token: ${{ github.token }}
+          # do not manage PRs
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          # stale issue config
+          days-before-issue-stale: 90
+          days-before-issue-close: 21
+          stale-issue-message: >
+            Hello, I'm a bot and I thank you in the name of the community for opening this issue.
+            
+            To help our human contributors focus on the most-relevant reports, I check up on old issues to see if they're still relevant. This issue has had no activity for 90 days, and so I marked it as stale.
+            
+            The community would appreciate your effort in checking if the issue is still valid. If it isn't, please close it.
+            
+            If the issue persists, and you'd like to remove the stale label, you simply need to leave a comment. Your comment can be as simple as "still important to me". If no comment left within 21 days this issue will be closed.
+            
+            Lastly, you can always ask for help at [our Discourse Forum](https://discuss.bitrise.io/).
+          close-issue-message: >
+            I'll close this issue, but if you need more info/help just let us know by opening a new one!
+          stale-issue-label: stale
+          close-issue-label: stale
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/lock-threads@v2
+        with:
+          github-token: ${{ github.token }}
+          # do not manage PRs
+          process-only: issues
+          # stale issue config
+          issue-lock-inactive-days: 0
+          issue-lock-reason: ''
+          
+          
