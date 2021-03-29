@@ -36,8 +36,6 @@ jobs:
             If no comment left within 21 days this issue will be closed.
           close-issue-message: |
             I'll close this issue as it seems to be not relevant anymore.
-
-            We believe an old issue probably has a bunch of context given within it that's no longer relevant, if the problem still exists please open a new issue.
           stale-issue-label: stale
       # https://github.com/dessant/lock-threads
       - uses: dessant/lock-threads@v2
