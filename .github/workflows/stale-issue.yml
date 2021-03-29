@@ -1,4 +1,4 @@
-name: Organization Issue Actions
+name: Stale Issue Workflow
 
 on:
   # Allows manually running
