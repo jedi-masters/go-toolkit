@@ -34,7 +34,7 @@ jobs:
             If the issue persists, and you'd like to remove the stale label, you simply need to leave a comment. Your comment can be as simple as "still important to me".
             
             If no comment left within 21 days this issue will be closed.
-          close-issue-message: |
+          close-issue-message: >
             I'll close this issue as it seems to be not relevant anymore.
           stale-issue-label: stale
       # https://github.com/dessant/lock-threads
