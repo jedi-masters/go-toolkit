@@ -39,9 +39,11 @@ jobs:
 
             We believe an old issue probably has a bunch of context given within it that's no longer relevant, if the problem still exists please open a new issue.
           stale-issue-label: stale
+      # https://github.com/jakejarvis/wait-action
+      # Wait 1m to make sure lock-threads will actually lock the issue where stale just recently left a message.
       - uses: jakejarvis/wait-action@master
         with:
-          time: '30s'
+          time: '1m'
       # https://github.com/dessant/lock-threads
       - uses: dessant/lock-threads@v2
         with:
