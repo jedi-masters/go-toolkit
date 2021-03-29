@@ -24,18 +24,17 @@ jobs:
           # stale issue config
           days-before-issue-stale: 0 # 90
           days-before-issue-close: 0 # 21
-          stale-issue-message: >
+          stale-issue-message: |
             Hello, I'm a bot and I thank you in the name of the community for opening this issue.
-            
-            To help our human contributors focus on the most-relevant reports, I check up on old issues to see if they're still relevant. This issue has had no activity for 90 days, and so I marked it as stale.
-            
+
+            To help our human contributors focus on the most relevant reports, I check up on old issues to see if they're still relevant.
+            This issue has had no activity for 90 days, and so I marked it as stale.
+
             The community would appreciate your effort in checking if the issue is still valid. If it isn't, please close it.
-            
-            If the issue persists, and you'd like to remove the stale label, you simply need to leave a comment. Your comment can be as simple as "still important to me". If no comment left within 21 days this issue will be closed.
-            
-            Lastly, you can always ask for help at [our Discourse Forum](https://discuss.bitrise.io/).
-          close-issue-message: >
-            I'll close this issue, but if you need more info/help just let us know by opening a new one!
+            If the issue persists, and you'd like to remove the stale label, you simply need to leave a comment. Your comment can be as simple as "still important to me". 
+            If no comment left within 21 days this issue will be closed.
+          close-issue-message: |
+            I'll close this issue, but if you need more info/help just let us know by opening a new issue!
           stale-issue-label: stale
       # https://github.com/dessant/lock-threads
       - uses: dessant/lock-threads@v2
