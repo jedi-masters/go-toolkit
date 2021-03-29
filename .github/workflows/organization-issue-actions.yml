@@ -1,11 +1,14 @@
 name: Organization Issue Actions
 
 on:
+  # Allows manually running
+  # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#manual-events
   workflow_dispatch:
   
   schedule:
-    # run at 11:30 (UTC) every day
-    - cron: '30 11 * * *'
+    # Runs at 08:00 UTC every day
+    # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
+    - cron: '0 8 * * *'
 
 jobs:
   stale:
@@ -19,8 +22,8 @@ jobs:
           days-before-pr-stale: -1
           days-before-pr-close: -1
           # stale issue config
-          days-before-issue-stale: 90
-          days-before-issue-close: 21
+          days-before-issue-stale: 0 # 90
+          days-before-issue-close: 0 # 21
           stale-issue-message: >
             Hello, I'm a bot and I thank you in the name of the community for opening this issue.
             
@@ -41,7 +44,7 @@ jobs:
           # do not manage PRs
           process-only: issues
           # stale issue config
-          issue-lock-inactive-days: 0
+          issue-lock-inactive-days: 0 # immediately lock closed issues
           issue-lock-reason: ''
           
           
