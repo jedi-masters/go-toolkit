@@ -25,19 +25,19 @@ jobs:
           days-before-issue-stale: 0 # 90
           days-before-issue-close: 0 # 21
           stale-issue-message: |
-            Hello, I'm a bot and I thank you in the name of the community for opening this issue.
+            Hello there, I'm a bot. On behalf of the community I thank you for opening this issue.
 
             To help our human contributors focus on the most relevant reports, I check up on old issues to see if they're still relevant.
-            This issue has had no activity for 90 days, and so I marked it as stale.
+            This issue has had no activity for 90 days, so I marked it as stale.
 
-            The community would appreciate your effort in checking if the issue is still valid. If it isn't, please close it.
+            The community would appreciate if you could check if the issue still persists. If it isn't, please close it.
             If the issue persists, and you'd like to remove the stale label, you simply need to leave a comment. Your comment can be as simple as "still important to me".
             
-            If no comment left within 21 days this issue will be closed.
+            If no comment left within 21 days, this issue will be closed.
           close-issue-message: >
-            I'll close this issue as it seems to be not relevant anymore.
+            I'll close this issue as it doesn't seem to be relevant anymore.
 
-            We believe an old issue probably has a bunch of context given within it that's no longer relevant, if the problem still exists please open a new issue.
+            We believe an old issue probably has a bunch of context that's no longer relevant, therefore, if the problem still persists, please open a new issue.
           stale-issue-label: stale
       # https://github.com/jakejarvis/wait-action
       # Wait 1m to make sure lock-threads will actually lock the issue where stale just recently left a message.
